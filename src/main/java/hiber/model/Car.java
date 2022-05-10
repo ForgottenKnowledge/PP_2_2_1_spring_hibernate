@@ -1,9 +1,11 @@
 package hiber.model;
 
-import org.hibernate.annotations.NaturalId;
+
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 
+@Component
 @Entity
 @Table(name = "cars")
 public class Car {
@@ -44,11 +46,4 @@ public class Car {
         this.series = series;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
 }
